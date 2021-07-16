@@ -15,7 +15,8 @@ COPY ./spec-file.txt /home/ubuntu/segm_code
 COPY ./pip_requirements.txt /home/ubuntu/segm_code
 COPY ./train.py /home/ubuntu/segm_code
 COPY ./waiter.py /home/ubuntu/segm_code
-
+COPY ./maskOutput.py /home/ubuntu/segm_code
+COPY ./prepDataSet.py /home/ubuntu/segm_code
 RUN conda create --name tf-seg --file spec-file.txt
 
 RUN echo "conda activate tf-seg" >> ~/.bashrc

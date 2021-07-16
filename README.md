@@ -19,4 +19,16 @@ docker run -it \
   tf-seg-rapida
 ```
 
+To check the container id of the image you just starte, run
+```
+docker ps
+```
+
+To to launch the shell of the docker container run:
+
+```
+docker exec -it DOCKERID bash
+```
+
+Where <b>DOCKERID</b> is the id, acquired from previous step.
 </p>
